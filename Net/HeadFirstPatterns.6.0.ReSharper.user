@@ -1,0 +1,83 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="E0ECF376-8DA1-4AD8-B017-29334AEF6FF3/d:State/f:GumballMachineTests.cs" caret="612" fromTop="18" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:GumballMachine.cs" caret="366" fromTop="14" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:MachineMessages.cs" caret="1448" fromTop="35" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:GumballMachine.cs" caret="1613" fromTop="18" />
+      <File id="E0ECF376-8DA1-4AD8-B017-29334AEF6FF3/d:State/f:GumballMachineTests.cs" caret="551" fromTop="13" />
+      <File id="E0ECF376-8DA1-4AD8-B017-29334AEF6FF3/d:State/f:GumballMachineTests.cs" caret="260" fromTop="11" />
+      <File id="E0ECF376-8DA1-4AD8-B017-29334AEF6FF3/d:State/f:GumballMachineTests.cs" caret="399" fromTop="18" />
+      <File id="E0ECF376-8DA1-4AD8-B017-29334AEF6FF3/d:State/f:GumballMachineTests.cs" caret="727" fromTop="24" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:GumballMachine.cs" caret="964" fromTop="14" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:GumballMachine.cs" caret="278" fromTop="20" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:GumballMachine.cs" caret="1938" fromTop="26" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:GumballMachine.cs" caret="88" fromTop="7" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:GumballMachine.cs" caret="2351" fromTop="19" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:GumballMachine.cs" caret="88" fromTop="6" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:GumballMachine.cs" caret="88" fromTop="10" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:GumballMachine.cs" caret="1299" fromTop="9" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:GumballMachine.cs" caret="88" fromTop="14" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:GumballMachine.cs" caret="633" fromTop="7" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:GumballMachine.cs" caret="810" fromTop="12" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:GumballMachine.cs" caret="1089" fromTop="20" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:GumballMachine.cs" caret="1756" fromTop="13" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:GumballMachine.cs" caret="1613" fromTop="20" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:GumballMachine.cs" caret="2075" fromTop="12" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:GumballMachine.cs" caret="2220" fromTop="16" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:GumballMachine.cs" caret="2767" fromTop="14" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:GumballMachine.cs" caret="3083" fromTop="18" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:GumballMachine.cs" caret="2618" fromTop="4" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:GumballMachine.cs" caret="88" fromTop="0" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:GumballMachine.cs" caret="3234" fromTop="17" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:GumballMachine.cs" caret="3363" fromTop="22" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:GumballMachine.cs" caret="1446" fromTop="4" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:GumballMachine.cs" caret="88" fromTop="3" />
+      <File id="3204FEEE-251D-4495-8CA2-290DEBC145DF/d:State/f:MachineMessages.cs" caret="1443" fromTop="35" />
+    </RecentEdits>
+  </RecentFiles>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="testm" priority="31" />
+      <Item value="gumballMachine" priority="64" />
+      <Item value="new" priority="31" />
+      <Item value="GumballMachine" priority="28" />
+      <Item value="ae" priority="31" />
+      <Item value="TestInitialize" priority="31" />
+      <Item value="public" priority="63" />
+      <Item value="void" priority="63" />
+      <Item value="StringWriter`0" priority="31" />
+      <Item value="TestCleanup" priority="31" />
+      <Item value="sw" priority="31" />
+      <Item value="Console`0" priority="31" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Patterns.State.GumballMachine">
+      <Item value="InsertQuarter`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.StringWriter">
+      <Item value="Dispose`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="SetOut`0" priority="26" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.5.5\bin\net-2.0\lib</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+</Configuration>
