@@ -115,4 +115,12 @@
             }
         }
     }
+
+    internal class HasQuarterState
+    {
+    }
+
+    internal class NoQuarterState
+    {
+    }
 }
