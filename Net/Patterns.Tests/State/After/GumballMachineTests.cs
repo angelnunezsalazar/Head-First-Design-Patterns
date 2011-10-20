@@ -1,4 +1,4 @@
-﻿namespace Patterns.Tests.State
+﻿namespace Patterns.Tests.State.After
 {
     using System;
     using System.IO;
@@ -6,6 +6,7 @@
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     using Patterns.State;
+    using Patterns.State.After;
 
     [TestClass]
     public class GumballMachineTests
@@ -45,7 +46,6 @@
         [TestMethod]
         public void InsertWhenSoldOut()
         {
-            const int NO_GUMBALLS = 0;
             GumballMachine gumballMachine = CreateGumballMachine(NO_GUMBALLS);
 
             gumballMachine.InsertQuarter();

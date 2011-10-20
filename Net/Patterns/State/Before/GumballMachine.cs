@@ -1,4 +1,4 @@
-﻿namespace Patterns.State
+﻿namespace Patterns.State.Before
 {
     using System;
 
@@ -114,13 +114,5 @@
                 Console.WriteLine(MachineMessages.DispenseWhenHasQuarter);
             }
         }
-    }
-
-    internal class HasQuarterState
-    {
-    }
-
-    internal class NoQuarterState
-    {
     }
 }

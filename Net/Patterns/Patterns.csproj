@@ -40,10 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="State\GumballMachine.cs" />
+    <Compile Include="State\After\GumballMachine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="State\After\HasQuarterState.cs" />
+    <Compile Include="State\After\IState.cs" />
+    <Compile Include="State\Before\GumballMachine.cs" />
     <Compile Include="State\MachineMessages.cs" />
+    <Compile Include="State\After\NoQuarterState.cs" />
+    <Compile Include="State\After\SoldOutState.cs" />
+    <Compile Include="State\After\SoldState.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
