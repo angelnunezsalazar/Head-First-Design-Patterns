@@ -40,15 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="State\After\GumballMachine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="State\After\GumballMachine.cs" />
     <Compile Include="State\After\HasQuarterState.cs" />
     <Compile Include="State\After\IState.cs" />
-    <Compile Include="State\Before\GumballMachine.cs" />
-    <Compile Include="State\MachineMessages.cs" />
     <Compile Include="State\After\NoQuarterState.cs" />
     <Compile Include="State\After\SoldOutState.cs" />
     <Compile Include="State\After\SoldState.cs" />
+    <Compile Include="State\Before\GumballMachine.cs" />
+    <Compile Include="State\MachineMessages.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

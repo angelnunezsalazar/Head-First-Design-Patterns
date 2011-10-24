@@ -2,17 +2,30 @@
 {
     public class GumballMachine
     {
+        public readonly IState SoldOut;
+
+        public readonly IState NoQuarter;
+
+        public readonly IState HasQuarter;
+
+        public readonly IState Sold;
+
         public IState State { get; set; }
 
         public int Count { get; set; }
 
         public GumballMachine(int count)
         {
-            State=new SoldOutState();
+            this.SoldOut = new SoldOutState();
+            this.NoQuarter = new NoQuarterState(this);
+            this.HasQuarter = new HasQuarterState(this);
+            this.Sold = new SoldState(this);
+
+            this.State = SoldOut;
             this.Count = count;
             if (count > 0)
             {
-                this.State=new NoQuarterState(this);
+                this.State = NoQuarter;
             }
         }
 
@@ -28,7 +41,7 @@
 
         public void TurnCrank()
         {
-            this.State.TurnCrank();
+            this.State.Turn();
         }
 
         public void Dispense()

@@ -2,7 +2,7 @@ namespace Patterns.State.After
 {
     using System;
 
-    public class NoQuarterState : IState
+    internal class NoQuarterState : IState
     {
         private readonly GumballMachine gumballMachine;
 
@@ -13,7 +13,7 @@ namespace Patterns.State.After
 
         public void Insert()
         {
-            gumballMachine.State=new HasQuarterState(gumballMachine);
+            gumballMachine.State = gumballMachine.HasQuarter;
             Console.WriteLine(MachineMessages.InsertSuccessfully);
         }
 
@@ -22,7 +22,7 @@ namespace Patterns.State.After
             Console.WriteLine(MachineMessages.EjectWhenNoQuarter);
         }
 
-        public void TurnCrank()
+        public void Turn()
         {
             Console.WriteLine(MachineMessages.TurnWhenNoQuarter);
         }

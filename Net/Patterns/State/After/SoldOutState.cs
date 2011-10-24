@@ -2,7 +2,7 @@ namespace Patterns.State.After
 {
     using System;
 
-    public class SoldOutState : IState
+    internal class SoldOutState : IState
     {
         public void Insert()
         {
@@ -14,7 +14,7 @@ namespace Patterns.State.After
             Console.WriteLine(MachineMessages.EjectWhenSoldOut);
         }
 
-        public void TurnCrank()
+        public void Turn()
         {
             Console.WriteLine(MachineMessages.TurnWhenSoldOut);
         }

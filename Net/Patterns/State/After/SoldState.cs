@@ -2,7 +2,7 @@ namespace Patterns.State.After
 {
     using System;
 
-    public class SoldState : IState
+    internal class SoldState : IState
     {
         private readonly GumballMachine gumballMachine;
 
@@ -21,7 +21,7 @@ namespace Patterns.State.After
             Console.WriteLine(MachineMessages.EjectWhenSold);
         }
 
-        public void TurnCrank()
+        public void Turn()
         {
             Console.WriteLine(MachineMessages.TurnTwice);
         }
@@ -33,11 +33,11 @@ namespace Patterns.State.After
             if (gumballMachine.Count == 0)
             {
                 Console.WriteLine(MachineMessages.DispenseTheLastGumball);
-                gumballMachine.State=new SoldOutState();
+                gumballMachine.State = gumballMachine.SoldOut;
             }
             else
             {
-                gumballMachine.State=new NoQuarterState(gumballMachine);
+                gumballMachine.State = gumballMachine.NoQuarter;
             }
         }
     }

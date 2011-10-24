@@ -6,7 +6,8 @@
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     using Patterns.State;
-    using Patterns.State.Before;
+
+    using GumballMachine = Patterns.State.Before.GumballMachine;
 
     [TestClass]
     public class GumballMachineTests

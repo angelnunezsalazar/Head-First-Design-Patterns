@@ -4,10 +4,10 @@
 
     public class GumballMachine
     {
-        private const int SOLD_OUT = 0;
-        private const int NO_QUARTER = 1;
-        private const int HAS_QUARTER = 2;
-        private const int SOLD = 3;
+        public const int SOLD_OUT = 0;
+        public const int NO_QUARTER = 1;
+        public const int HAS_QUARTER = 2;
+        public const int SOLD = 3;
 
         int state = SOLD_OUT;
         int count;

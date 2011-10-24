@@ -6,7 +6,7 @@ namespace Patterns.State.After
 
         void Eject();
 
-        void TurnCrank();
+        void Turn();
 
         void Dispense();
     }
