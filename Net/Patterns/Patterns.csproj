@@ -49,6 +49,12 @@
     <Compile Include="State\After\SoldState.cs" />
     <Compile Include="State\Before\GumballMachine.cs" />
     <Compile Include="State\MachineMessages.cs" />
+    <Compile Include="TemplateMethod\After\Beverage.cs" />
+    <Compile Include="TemplateMethod\After\Coffee.cs" />
+    <Compile Include="TemplateMethod\After\Tea.cs" />
+    <Compile Include="TemplateMethod\Before\Coffee.cs" />
+    <Compile Include="TemplateMethod\Before\Tea.cs" />
+    <Compile Include="TemplateMethod\BeverageMessages.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -48,6 +48,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="State\After\GumballMachineTests.cs" />
     <Compile Include="State\Before\GumballMachineTests.cs" />
+    <Compile Include="TemplateMethod\After\CoffeeTests.cs" />
+    <Compile Include="TemplateMethod\After\TeaTests.cs" />
+    <Compile Include="TemplateMethod\Before\CoffeeTests.cs" />
+    <Compile Include="TemplateMethod\Before\TeaTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Patterns\Patterns.csproj">
@@ -55,6 +59,7 @@
       <Name>Patterns</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
