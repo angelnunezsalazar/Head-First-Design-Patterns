@@ -1,1 +1,1 @@
-Source Code from the book "Head First Design Patterns"
+Refactoring Katas from the book "Head First Design Patterns"
