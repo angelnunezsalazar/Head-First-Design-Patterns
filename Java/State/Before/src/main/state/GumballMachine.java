@@ -7,8 +7,8 @@ public class GumballMachine {
 	final static int HAS_QUARTER = 2;
 	final static int SOLD = 3;
 
-	int state = SOLD_OUT;
-	int count = 0;
+	private int state = SOLD_OUT;
+	private int count = 0;
 
 	public GumballMachine(int count) {
 		this.count = count;
