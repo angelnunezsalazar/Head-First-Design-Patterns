@@ -1,5 +1,7 @@
 ﻿namespace State
 {
+    using System;
+
     public class GumballMachine
     {
         public readonly IState SoldOut;
@@ -12,7 +14,7 @@
 
         public IState State { get; set; }
 
-        public int Count { get; set; }
+        public int Count { get; private set; }
 
         public GumballMachine(int count)
         {
@@ -47,6 +49,12 @@
         public void Dispense()
         {
             this.State.Dispense();
+        }
+
+        public void ReleaseBall()
+        {
+            Console.WriteLine(MachineMessages.DispenseSuccessfully);
+            Count = Count - 1;
         }
     }
 }

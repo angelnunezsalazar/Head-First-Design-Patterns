@@ -28,8 +28,7 @@ namespace State
 
         public void Dispense()
         {
-            Console.WriteLine(MachineMessages.DispenseSuccessfully);
-            this.gumballMachine.Count = this.gumballMachine.Count - 1;
+            this.gumballMachine.ReleaseBall();
             if (this.gumballMachine.Count == 0)
             {
                 Console.WriteLine(MachineMessages.DispenseTheLastGumball);
