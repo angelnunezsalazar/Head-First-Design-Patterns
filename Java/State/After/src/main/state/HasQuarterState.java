@@ -8,21 +8,21 @@ public class HasQuarterState implements State {
 	}
   
 	public void insertQuarter() {
-		System.out.println(MachineMessages.InsertTwice);
+		System.out.println(MachineMessages.YoutCantInsertAnotherQuarter);
 	}
  
 	public void ejectQuarter() {
-		System.out.println(MachineMessages.EjectSuccessfully);
+		System.out.println(MachineMessages.QuarterReturned);
 		gumballMachine.setState(gumballMachine.getNoQuarterState());
 	}
  
 	public void turnCrank() {
-		System.out.println(MachineMessages.TurnSuccessfully);
+		System.out.println(MachineMessages.TurnedSuccessfully);
 		gumballMachine.setState(gumballMachine.getSoldState());
 		gumballMachine.dispense();
 	}
 
     public void dispense() {
-        System.out.println(MachineMessages.DispenseWhenHasQuarter);
+        System.out.println(MachineMessages.NoGumballDispensed);
     }
 }

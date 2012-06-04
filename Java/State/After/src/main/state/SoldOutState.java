@@ -8,18 +8,18 @@ public class SoldOutState implements State {
     }
  
 	public void insertQuarter() {
-		System.out.println(MachineMessages.InsertWhenSoldOut);
+		System.out.println(MachineMessages.MachineIsSoldOut);
 	}
  
 	public void ejectQuarter() {
-		System.out.println(MachineMessages.EjectWhenSoldOut);
+		System.out.println(MachineMessages.NoQuarterToEject);
 	}
  
 	public void turnCrank() {
-		System.out.println(MachineMessages.TurnWhenSoldOut);
+		System.out.println(MachineMessages.TurnedButThereIsNoGumballs);
 	}
  
 	public void dispense() {
-		System.out.println(MachineMessages.DispenseWhenSoldOut);
+		System.out.println(MachineMessages.NoGumballDispensed);
 	}
 }

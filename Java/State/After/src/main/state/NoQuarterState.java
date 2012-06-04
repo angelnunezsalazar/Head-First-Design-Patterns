@@ -8,19 +8,19 @@ public class NoQuarterState implements State {
     }
  
 	public void insertQuarter() {
-		System.out.println(MachineMessages.InsertSuccessfully);
+		System.out.println(MachineMessages.YouInsertedAQuarter);
 		gumballMachine.setState(gumballMachine.getHasQuarterState());
 	}
  
 	public void ejectQuarter() {
-		System.out.println(MachineMessages.EjectWhenNoQuarter);
+		System.out.println(MachineMessages.YouHaventInsertedAQuarter);
 	}
  
 	public void turnCrank() {
-		System.out.println(MachineMessages.TurnWhenNoQuarter);
+		System.out.println(MachineMessages.TurnedButThereisNoQuarter);
 	 }
  
 	public void dispense() {
-		System.out.println(MachineMessages.DispenseWhenNoQuarter);
+		System.out.println(MachineMessages.YoutNeedToPayFirst);
 	} 
 }

@@ -9,22 +9,22 @@ public class SoldState implements State {
     }
        
 	public void insertQuarter() {
-		System.out.println(MachineMessages.InsertWhenSold);
+		System.out.println(MachineMessages.PleaseWaitYourGumball);
 	}
  
 	public void ejectQuarter() {
-		System.out.println(MachineMessages.EjectWhenSold);
+		System.out.println(MachineMessages.AlreadyTurnedTheCrank);
 	}
  
 	public void turnCrank() {
-		System.out.println(MachineMessages.TurnTwice);
+		System.out.println(MachineMessages.TurningTwice);
 	}
  
 	public void dispense() {
 		gumballMachine.releaseBall();
 		if (gumballMachine.getCount()== 0) {
 			gumballMachine.setState(gumballMachine.getSoldOutState());
-			System.out.println(MachineMessages.DispenseTheLastGumball);
+			System.out.println(MachineMessages.OutOfGumballs);
 		} else {
 			gumballMachine.setState(gumballMachine.getNoQuarterState());
 		}

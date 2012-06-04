@@ -30,7 +30,7 @@ public class GumballMachineTest {
 
 		gumballMachine.insertQuarter();
 
-		this.assertMachineMessage(MachineMessages.InsertSuccessfully);
+		this.assertMachineMessage(MachineMessages.YouInsertedAQuarter);
 	}
 
 	@Test
@@ -40,7 +40,7 @@ public class GumballMachineTest {
 		gumballMachine.insertQuarter();
 		gumballMachine.insertQuarter();
 
-		this.assertMachineMessage(MachineMessages.InsertTwice);
+		this.assertMachineMessage(MachineMessages.YoutCantInsertAnotherQuarter);
 	}
 
 	@Test
@@ -49,7 +49,7 @@ public class GumballMachineTest {
 
 		gumballMachine.insertQuarter();
 
-		this.assertMachineMessage(MachineMessages.InsertWhenSoldOut);
+		this.assertMachineMessage(MachineMessages.MachineIsSoldOut);
 	}
 
 	@Test
@@ -59,7 +59,7 @@ public class GumballMachineTest {
 		gumballMachine.insertQuarter();
 		gumballMachine.ejectQuarter();
 
-		this.assertMachineMessage(MachineMessages.EjectSuccessfully);
+		this.assertMachineMessage(MachineMessages.QuarterReturned);
 	}
 
 	@Test
@@ -68,7 +68,7 @@ public class GumballMachineTest {
 
 		gumballMachine.ejectQuarter();
 
-		this.assertMachineMessage(MachineMessages.EjectWhenNoQuarter);
+		this.assertMachineMessage(MachineMessages.YouHaventInsertedAQuarter);
 	}
 
 	@Test
@@ -77,7 +77,7 @@ public class GumballMachineTest {
 
 		gumballMachine.ejectQuarter();
 
-		this.assertMachineMessage(MachineMessages.EjectWhenSoldOut);
+		this.assertMachineMessage(MachineMessages.NoQuarterToEject);
 	}
 
 	@Test
@@ -86,7 +86,7 @@ public class GumballMachineTest {
 
 		gumballMachine.turnCrank();
 
-		this.assertMachineMessage(MachineMessages.TurnWhenSoldOut);
+		this.assertMachineMessage(MachineMessages.TurnedButThereIsNoGumballs);
 	}
 
 	@Test
@@ -95,7 +95,7 @@ public class GumballMachineTest {
 
 		gumballMachine.turnCrank();
 
-		this.assertMachineMessage(MachineMessages.TurnWhenNoQuarter);
+		this.assertMachineMessage(MachineMessages.TurnedButThereisNoQuarter);
 	}
 
 	@Test
@@ -105,8 +105,8 @@ public class GumballMachineTest {
 		gumballMachine.insertQuarter();
 		gumballMachine.turnCrank();
 
-		this.assertMachineMessage(MachineMessages.TurnSuccessfully);
-		this.assertMachineMessage(MachineMessages.DispenseSuccessfully);
+		this.assertMachineMessage(MachineMessages.TurnedSuccessfully);
+		this.assertMachineMessage(MachineMessages.GumballComesRollingOut);
 	}
 
 	@Test
@@ -118,7 +118,7 @@ public class GumballMachineTest {
 		gumballMachine.insertQuarter();
 		gumballMachine.turnCrank();
 
-		this.assertMachineMessage(MachineMessages.DispenseTheLastGumball);
+		this.assertMachineMessage(MachineMessages.OutOfGumballs);
 	}
 
 	@Test
@@ -127,7 +127,7 @@ public class GumballMachineTest {
 
 		gumballMachine.dispense();
 
-		this.assertMachineMessage(MachineMessages.DispenseWhenNoQuarter);
+		this.assertMachineMessage(MachineMessages.YoutNeedToPayFirst);
 	}
 
 	@Test
@@ -137,7 +137,7 @@ public class GumballMachineTest {
 		gumballMachine.insertQuarter();
 		gumballMachine.dispense();
 
-		this.assertMachineMessage(MachineMessages.DispenseWhenHasQuarter);
+		this.assertMachineMessage(MachineMessages.NoGumballDispensed);
 	}
 
 	@Test
@@ -146,7 +146,7 @@ public class GumballMachineTest {
 
 		gumballMachine.dispense();
 
-		this.assertMachineMessage(MachineMessages.DispenseWhenSoldOut);
+		this.assertMachineMessage(MachineMessages.NoGumballDispensed);
 	}
 
 	private static GumballMachine createGumballMachine(int count) {

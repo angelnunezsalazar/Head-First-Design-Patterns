@@ -19,39 +19,39 @@ public class GumballMachine {
 
 	public void insertQuarter() {
 		if (state == HAS_QUARTER) {
-			System.out.println(MachineMessages.InsertTwice);
+			System.out.println(MachineMessages.YouCantInsertAnotherQuarter);
 		} else if (state == NO_QUARTER) {
 			state = HAS_QUARTER;
-			System.out.println(MachineMessages.InsertSuccessfully);
+			System.out.println(MachineMessages.PleaseWaitYourGumball);
 		} else if (state == SOLD_OUT) {
-			System.out.println(MachineMessages.InsertWhenSoldOut);
+			System.out.println(MachineMessages.MachineIsSoldOut);
 		} else if (state == SOLD) {
-			System.out.println(MachineMessages.InsertWhenSold);
+			System.out.println(MachineMessages.PleaseWaitYourGumball);
 		}
 	}
 
 	public void ejectQuarter() {
 		if (state == HAS_QUARTER) {
-			System.out.println(MachineMessages.EjectSuccessfully);
+			System.out.println(MachineMessages.QuarterReturned);
 			state = NO_QUARTER;
 		} else if (state == NO_QUARTER) {
-			System.out.println(MachineMessages.EjectWhenNoQuarter);
+			System.out.println(MachineMessages.YouHaventInsertedAQuarter);
 		} else if (state == SOLD) {
-			System.out.println(MachineMessages.EjectWhenSold);
+			System.out.println(MachineMessages.AlreadyTurnedTheCrank);
 		} else if (state == SOLD_OUT) {
-			System.out.println(MachineMessages.EjectWhenSoldOut);
+			System.out.println(MachineMessages.NoQuarterToEject);
 		}
 	}
 
 	public void turnCrank() {
 		if (state == SOLD) {
-			System.out.println(MachineMessages.TurnTwice);
+			System.out.println(MachineMessages.TurningTwice);
 		} else if (state == NO_QUARTER) {
-			System.out.println(MachineMessages.TurnWhenNoQuarter);
+			System.out.println(MachineMessages.TurnedButThereIsNoQuarter);
 		} else if (state == SOLD_OUT) {
-			System.out.println(MachineMessages.TurnWhenSoldOut);
+			System.out.println(MachineMessages.TurnedButThereIsNoGumballs);
 		} else if (state == HAS_QUARTER) {
-			System.out.println(MachineMessages.TurnSuccessfully);
+			System.out.println(MachineMessages.TurnedSuccessfully);
 			state = SOLD;
 			dispense();
 		}
@@ -59,20 +59,20 @@ public class GumballMachine {
 
 	public void dispense() {
 		if (state == SOLD) {
-			System.out.println(MachineMessages.DispenseSuccessfully);
+			System.out.println(MachineMessages.GumballComesRollingOut);
 			count = count - 1;
 			if (count == 0) {
-				System.out.println(MachineMessages.DispenseTheLastGumball);
+				System.out.println(MachineMessages.OutOfGumballs);
 				state = SOLD_OUT;
 			} else {
 				state = NO_QUARTER;
 			}
 		} else if (state == NO_QUARTER) {
-			System.out.println(MachineMessages.DispenseWhenNoQuarter);
+			System.out.println(MachineMessages.YouNeedToPayFirst);
 		} else if (state == SOLD_OUT) {
-			System.out.println(MachineMessages.DispenseWhenSoldOut);
+			System.out.println(MachineMessages.NoGumballDispensed);
 		} else if (state == HAS_QUARTER) {
-			System.out.println(MachineMessages.DispenseWhenHasQuarter);
+			System.out.println(MachineMessages.NoGumballDispensed);
 		}
 	}
 }
